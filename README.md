@@ -5,3 +5,6 @@
 2. Run command `yarn start` to start to project
 3. Launch browser with new page in `locahost:3000`
 4. Enjoy!
+
+## Screenshot
+![Simple scraper](screenshot.jpg)
