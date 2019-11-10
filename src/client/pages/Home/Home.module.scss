@@ -1,0 +1,87 @@
+.container {
+  max-width: 1200px;
+  min-width: 360px;
+  padding: 0 20px;
+  margin: 10px auto 0;
+}
+
+.mainTitle {
+  color: $primaryBlue;
+  text-align: center;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background: #ddd;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.searchForm {
+  margin-top: 10px;
+
+  input {
+    width: 80%;
+    height: 40px;
+    padding: 5px 10px;
+    outline: none;
+  }
+
+  button[type="submit"] {
+    width: calc(20% - 20px);
+    margin-left: 20px;
+    height: 40px;
+    cursor: pointer;
+    background: none;
+    cursor: pointer;
+    border-color: $primaryBlue;
+    color: $primaryBlue;
+    outline: none;
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+}
+
+.resultContainer {
+  margin-top: 20px;
+
+  &.withResult {
+    border: 1px solid #ddd;
+    padding: 10px;
+    color: #222;
+    cursor: pointer;
+    transition: 100ms all linear;
+
+
+    &:hover {
+      background: $primaryBlue;
+      color: #ddd;
+
+      .title {
+        color: #fff;
+      }
+    }
+
+  }
+
+  .title {
+    font-weight: 500;
+    color: $primaryBlue;
+  }
+
+  .likeCount {
+    margin-top: 10px;
+  }
+
+  .commentCount {
+    margin-top: 10px;
+  }
+
+  .readingTime {
+    margin-top: 10px;
+  }
+}
