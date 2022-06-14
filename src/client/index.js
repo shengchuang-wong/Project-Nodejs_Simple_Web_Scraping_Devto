@@ -33,7 +33,7 @@ const store = createStore(
 )
 sagaMiddleware.run(rootSaga)
 
-const App = hot(function() {
+const App = hot(function () {
   return <Layout />
 })
 
@@ -41,11 +41,6 @@ loadableReady(() => {
   ReactDOM.hydrate(
     <CookiesProvider>
       <Provider store={store}>
-        <ErrorBoundary>
-          <ConnectedRouter history={history} key={Math.random()}>
-            <App />
-          </ConnectedRouter>
-        </ErrorBoundary>
       </Provider>
     </CookiesProvider>,
     document.getElementById('root')
