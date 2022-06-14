@@ -36,14 +36,10 @@ sagaMiddleware.run(rootSaga)
 const App = hot(function () {
   return <Layout />
 })
-
-loadableReady(() => {
-  ReactDOM.hydrate(
-    <CookiesProvider>
-      <Provider store={store}>
-      </Provider>
-    </CookiesProvider>,
-    document.getElementById('root')
+e = { store } >
+      </Provider >
+    </CookiesProvider >,
+  document.getElementById('root')
   )
 })
 
