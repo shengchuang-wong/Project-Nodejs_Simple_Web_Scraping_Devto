@@ -5,7 +5,7 @@ let currentApp = app
 const server = http.createServer(app)
 
 server.listen(3000, () => {
-  console.log('server started on port 3000')
+  console.log('web scraping server started on port 3000')
 })
 
 if (module.hot) {
